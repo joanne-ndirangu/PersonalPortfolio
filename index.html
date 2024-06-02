@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="sidebar">
+            <label for="sidebar" class="open-sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </label>
+            <label id="overlay" for="sidebar"></label>
+            <div class="links">
+                <label for="sidebar" class="close-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </label>
+                <!-- <p class="name">Joanne</p> -->
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="pic">
+            <img src="images/me.jpg" alt="Photo" width="200px">
+        </div>
+        <div id="home">
+            <h1>Hi,<br>I'm Joanne.</h1>
+            <p>A Fullstack Software Developer based in Nairobi, Kenya
+                <a href="https://maps.app.goo.gl/21ZdV3S1awMR3MTv6" target="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/447/447031.png" alt="" width="20px"></a>
+            </p>
+        </div>
+
+        <div id="about">
+            <h5>About Me</h5>
+            <p>Hello! I'm Joanne Ndirangu, a passionate Software Developer and avid learner currently pursuing my BBIT degree at The Multimedia University of Kenya.</p> <br>
+            <p>As a freelance web developer, I find immense joy in crafting innovative and visually appealing websites. My journey in technology is driven by a strong inclination towards continuous learning and skill enhancement.</p> <br>
+            <p>I thrive in dynamic environments, where I can apply my adaptability and creativity to overcome challenges and drive success. Collaboration is at the core of my work ethic, as I enjoy working alongside others to achieve common goals and foster a harmonious team dynamic.</p> <br>
+            <p>Outside of coding, I find delight in exploring new culinary experiences at restaurants, immersing myself in captivating series, and indulging in the art of crocheting.</p>
+            <p>Additionally, I relish venturing into novel activities such as pottery and painting, as well as embarking on scenic drives to unwind and discover new vistas.</p>
+            <div id="cv">
+                <a href="downloads/Joanne CV.pdf" target="_blank">Download CV</a>
+            </div>
+        </div> <br>
+
+        <div id="projects"> 
+            <h5>My Projects</h5>
+            <div id="card-container">
+                <div class="card">
+                    <h3>Moringa Desk</h3>
+                    <img src="images/moringa-desk.jpeg" alt="Moringa Desk" width="400px">
+                    <p>Over time, students at Moringa often face similar technical problems, leading to duplicated efforts in seeking solutions. This platform aims to streamline problem-solving and knowledge-sharing by providing a central repository of problems and their possible solutions. It encourages students to share, vote on, and highlight valuable answers.</p>
+                    <a href="https://moringadesk.netlify.app/" target="_blank">Visit Website</a>
+                </div>
+                <div class="card">
+                    <h3>Rick and Morty-Verse</h3>
+                    <img src="https://i.pinimg.com/564x/12/f8/5f/12f85ff6f245bc51ffc0d5e0d7f88fa2.jpg" alt="Rick and Morty">
+                    <p>This is an app that gives you information on the famous rick and morty show. You can look at different characters throughout the show and get a bit of information on them. The app also lists the episodes of the show in order from the first season. The different locations where the various episodes of the show take place are also in the app. The user has the option of voting for their favorite character, episode and location from the show.</p>
+                    <a href="https://independent-project-phase-2.vercel.app/" target="_blank" width="400px" height="5px">Visit Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h5>Skills</h5>
+            My skills include proficiency in <br> <br> <br>
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968267.png" alt="HTML" width="80px">HTML
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968242.png" alt="CSS" width="80px">CSS
+            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="JavaScript" width="80px">JavaScript <br> <br> <br>
+            <img src="https://cdn-icons-png.flaticon.com/128/919/919852.png" alt="Python" width="80px">Python
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1MndL-Xp1JcnqaB0YOqTp6zDjrwYyGKsPA&s" alt="React" width="80px">React
+            <img src="https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png" alt="Flask" width="110px">Flask <br> <br> <br>
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" width="80px">GitHub
+        </div>
+
+        <div id="contact">
+            <h5><u>Contact Form</u></h5>
+            <div  class="con">
+                <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="+254 712 345 678" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="10" cols="40" placeholder="Enter Message" required></textarea> <br>
+                        <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="contact" class="cont">
+            <h3>Get In Touch!</h3> <br>
+            Call Me <br>
+            <img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" alt="" width="20px"> <br>
+            <a href="tel:+254701079860">+254 (0) 701 079 860</a> <br> <br>
+            <a href="mailto:joannendirangu15@gmail.com" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/joanne-ndirangu-9305662a8/" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="LinkedIn" width="30px">
+            </a>
+            <a href="https://github.com/joanne-ndirangu" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" width="25px">
+            </a> <br> <br>
+            <div class="copyright">
+                <p>&copy; 2024 Joanne Ndirangu. All rights reserved.</p>
+            </div> <br>
+        </div>
+    </footer>
+</body>
+</html>
