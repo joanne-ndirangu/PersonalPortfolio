@@ -12,6 +12,18 @@ body {
     padding: 10px;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
 /* Navigation */
 nav {
     height: 60px;
@@ -20,12 +32,27 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
     z-index: 1000;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
+
+nav {
+    height: 60px;
+    background-color: #f38686;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1000;
+    max-width: 600px;
+    margin: 0 auto; /* Center the nav itself horizontally */
+    padding-left: 80px;
+}
+
 
 nav a {
     height: 100%;
@@ -65,13 +92,17 @@ nav svg {
 }
 
 /* Main Content */
+#contact {
+    margin-top: 25px;
+}
+
 .con {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
     padding: 20px;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 form {
@@ -134,9 +165,16 @@ input[type="submit"]:hover {
     padding-bottom: 30px;
 }
 
-.cont svg:hover, img:hover {
+img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cont svg:hover, .cont img:hover {
     cursor: pointer;
     transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
 }
 
 .cont h3 {
@@ -144,15 +182,17 @@ input[type="submit"]:hover {
 }
 
 #home h1 {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 #home p {
     font-size: 20px;
     text-align: center;
     color: rgb(128, 70, 70);
+    padding-top: 20px;
+    line-height: 1.5rem;
 }
 
 .pic {
@@ -167,15 +207,16 @@ input[type="submit"]:hover {
 }
 
 #about {
-    padding-top: 20px;
+    padding-top: 25px;
     padding: 0 20px;
+    margin-top: 15px;
 }
 
 #about p {
     text-align: center;
     display: block;
     margin: 10px 0;
-    line-height: 1.6em;
+    line-height: 1.5em;
     font-size: 18px;
     padding: 0 20px;
 }
@@ -196,6 +237,7 @@ input[type="submit"]:hover {
 #projects {
     padding: 20px;
     text-align: center;
+    margin-top: 15px;
 }
 
 #card-container {
@@ -239,52 +281,45 @@ input[type="submit"]:hover {
     padding-top: 20px;
 }
 
-@media (max-width: 320px) {
-    body {
-        padding: 0 10px;
-    }
-
-    #about p {
-        padding: 0 10px;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    nav a {
-        padding: 0 10px;
-    }
-}
-
 @media (max-width: 768px) {
     .links {
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
         top: 60px; 
-        right: -100%;
+        left: -100%;
         z-index: 10;
-        width: 30%;
+        width: 20%;
         background-color: #f38686;
-        transition: 0.75s ease-out;
-        height: calc(100% - 60px); /* full height minus nav height */
+        transition: left 0.75s ease-out; 
+        height: calc(100% - 60px);
+        padding-top: 20px;
     }
-
     nav {
-        justify-content: space-between;
+        justify-content: space-between; 
         padding: 0 20px;
+        background-color: #f38686;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center; 
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
     }
-
-    .open-sidebar, .close-sidebar {
+    nav a {
+        box-sizing: border-box;
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        justify-content: flex-start;
+    }
+    .open-sidebar {
         display: block;
+        cursor: pointer;
     }
-
     #sidebar:checked ~ .links {
-        right: 0;
+        left: 0;
     }
-
     #sidebar:checked ~ #overlay {
         height: 100%;
         width: 100%;
@@ -293,28 +328,40 @@ input[type="submit"]:hover {
         left: 0;
         z-index: 9;
     }
-
-    nav a {
-        height: auto;
-        width: 100%;
-        padding: 20px;
-        justify-content: flex-start;
-    }
-
     #cv {
-        margin-left: 0;
+        margin: 20px auto;
+        text-align: center;
+        text-decoration: none;
     }
-    #con input{
+    #con input {
         max-width: 80px;
     }
 }
 
-@media (min-width: 769px) {
-    nav {
-        justify-content: center;
+@media (max-width: 320px) {
+    #about p {
+        padding: 0 10px;
     }
-
-    .open-sidebar, .close-sidebar {
-        display: none;
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+    nav a {
+        padding: 10px; 
+    }
+    .links {
+        padding-top: 20px; 
+        width: 25%;
+    }
+    #projects, #con, #cont {
+        margin-top: 0;
+        padding-top: 10px;
+        padding: 0;
+    }
+    .pic {
+        padding-top: 75px;
+    }
+    #home h1{
+        padding-top: 5px;
     }
 }
