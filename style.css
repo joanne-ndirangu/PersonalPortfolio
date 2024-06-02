@@ -5,6 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: rgb(129, 10, 10);
     box-sizing: border-box;
+    font-family: 'Alegreya';
 }
 
 body {
@@ -115,7 +116,7 @@ form {
 }
 
 h5 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 20px;
     color: rgb(158, 8, 8);
@@ -165,6 +166,17 @@ input[type="submit"]:hover {
     padding-bottom: 30px;
 }
 
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.pic img {
+    border-radius: 100%;
+}
+
 img:hover {
     cursor: pointer;
     transform: scale(1.2);
@@ -195,20 +207,8 @@ img:hover {
     line-height: 1.5rem;
 }
 
-.pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-}
-
-.pic img {
-    border-radius: 100%;
-}
-
 #about {
-    padding-top: 25px;
-    padding: 0 20px;
+    padding-top: 20px;
     margin-top: 15px;
 }
 
@@ -234,8 +234,14 @@ img:hover {
     margin: 20px auto;
 }
 
+#cv:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+
 #projects {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     margin-top: 15px;
 }
@@ -256,16 +262,17 @@ img:hover {
     box-shadow: 0 2px 4px rgb(128, 70, 70);
     color: #fff;
     text-align: center;
+    text-decoration: 0;
 }
 
 .card h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin: 8px 0;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 18px;
     margin: 4px 0;
 }
 
@@ -281,6 +288,41 @@ img:hover {
     padding-top: 20px;
 }
 
+#info {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(128, 70, 70);
+    padding-top: 20px;
+    line-height: 1.5rem; 
+}
+
+.info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.info h5 {
+    padding-top: 30px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.info p, li {
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+    line-height: 1.5em;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.info a {
+    font-size: 18px;
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
     .links {
         flex-direction: column;
@@ -300,7 +342,6 @@ img:hover {
         padding: 0 20px;
         background-color: #f38686;
         display: flex;
-        /* justify-content: space-between; */
         align-items: center; 
         margin: 0;
         width: 100%;
@@ -340,7 +381,7 @@ img:hover {
 
 @media (max-width: 320px) {
     #about p {
-        padding: 0 10px;
+        padding: 0;
     }
     .card {
         width: 100%;
@@ -363,5 +404,9 @@ img:hover {
     }
     #home h1{
         padding-top: 5px;
+    }
+    .info img {
+        width: 100%;
+        max-width: 100%;
     }
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Moringa Desk</title>
+</head>
+<body>
+    <body>
+        <header>
+            <nav>
+                <input type="checkbox" id="sidebar">
+                <label for="sidebar" class="open-sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </label>
+                <label id="overlay" for="sidebar"></label>
+                <div class="links">
+                    <label for="sidebar" class="close-sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </label>
+                    <a href="index.html#home">Home</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="info">
+                <h5>Moringa Desk</h5>
+                <img src="images/moringa-desk.jpeg" alt="Moringa Desk" width="600px">
+                <p>Over time, students at Moringa often face similar technical problems, leading to duplicated efforts in seeking solutions. This platform aims to streamline problem-solving and knowledge-sharing by providing a central repository of problems and their possible solutions. It encourages students to share, vote on, and highlight valuable answers.</p>
+                <h2>Features</h2>
+                    <p>The platform's Minimum Viable Product (MVP) includes the following features:</p>
+                    <ol type="1">
+                        <li>Authentication System: Users can create accounts and log in to access the system.</li>
+                        <li>Question Creation: Users can raise questions based on the type of problem encountered.</li>
+                        <li>Answering Questions: Users can reply to posted questions with possible solutions.</li>
+                        <li>Voting System: Users can vote on the suggested solutions to indicate their usefulness.</li>
+                        <li> Linking Similar Problems: The system can link similar problems together for easy reference.</li>
+                        <li>FAQ Implementation: Frequently Asked Questions (FAQ) section to address common queries.</li>
+                        <li>Question Follow-up: Users can mark a question and receive notifications for new answers.</li>
+                        <li>Notification System: Notifications for votes, suggested answers, and responses on marked questions.</li>
+                    </ol>  
+                <h2>Technologies used</h2>
+                <ul>
+                    <li>Backend: The backend of the application developed using the Python flask framework.</li>
+                    <li>Database: PostgreSQL used as the database management system.</li>
+                    <li>Wireframes: Figma used to create the user interface prototype.</li>
+                    <li>Frontend: The frontend of the application is built using React.js, and state management is handled using Redux Toolkit.</li>
+                </ul>
+                <p>This project was a collaborative effort by a group of 5 people.</p>
+                <a href="https://moringadesk.netlify.app/" target="_blank">Visit Website</a> <br>
+                <a href="https://github.com/Griffin-Ndede/MoringaDesk_Frontend" target="_blank">Frontend GitHub Repo</a> <br>
+                <a href="https://github.com/Griffin-Ndede/MoringaDesk_Backend" target="_blank">Backend GitHub Repo</a>
+            </div>
+        </main>
+        <footer>
+            <div id="contact" class="cont">
+                <h3>Get In Touch!</h3> <br>
+                Call Me <br>
+                <img src="https://cdn-icons-png.flaticon.com/128/126/126509.png" alt="" width="20px"> <br>
+                <a href="tel:+254701079860">+254 (0) 701 079 860</a> <br> <br>
+                <a href="mailto:joannendirangu15@gmail.com" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joanne-ndirangu-9305662a8/" target="_blank">
+                    <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="LinkedIn" width="30px">
+                </a>
+                <a href="https://github.com/joanne-ndirangu" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="GitHub" width="25px">
+                </a> <br> <br>
+                <div class="copyright">
+                    <p>&copy; 2024 Joanne Ndirangu. All rights reserved.</p>
+                </div> <br>
+            </div>
+        </footer>
+</body>
+</html>
