@@ -28,21 +28,7 @@ header {
 /* Navigation */
 nav {
     height: 60px;
-    background-color: #f38686;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    z-index: 1000;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-
-nav {
-    height: 60px;
-    background-color: #f38686;
+    background-color: #faeeee;
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center;
@@ -340,7 +326,7 @@ h2 {
     nav {
         justify-content: space-between; 
         padding: 0 20px;
-        background-color: #f38686;
+        background-color: #faeeee;
         display: flex;
         align-items: center; 
         margin: 0;
